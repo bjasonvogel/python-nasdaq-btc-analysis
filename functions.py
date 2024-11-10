@@ -5,9 +5,9 @@ Misc utility functions
 from datetime import datetime
 
 #define magic display color text formatting control strings
-fmt_green_code = "\033[32m"
-fmt_red_code = "\033[31m"
-fmt_reset_code = "\033[0m"
+fmt_green_code = "\033[32m"    # Green Text in Console
+fmt_red_code = "\033[31m"      # Red Text in Console
+fmt_reset_code = "\033[0m"     # Clear console formatting
 
 """
 Use magic formatting strings to generate red text

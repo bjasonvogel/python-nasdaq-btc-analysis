@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Handes user input of date range parameters
+Handles user input of date range parameters
 """
 import datetime
 import functions as fn
