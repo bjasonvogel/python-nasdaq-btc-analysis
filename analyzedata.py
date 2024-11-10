@@ -5,7 +5,7 @@ Performs analysis of quantitative data
 
 import functions as fn
 
-volitility_threshold = 4.0
+volatility_threshold = 4.0
 
 def Analyze(BTC_price_history):
     min_price = min(BTC_price_history, key=lambda row: row[1])
@@ -14,8 +14,8 @@ def Analyze(BTC_price_history):
     print("Highest Price occured on", fn.DayPriceString(max_price))
 
     # Identify volitile days
-    print("Most volitile days [Defined as change of greater than +/- " + f"{volitility_threshold:>2,.1f}%" + "]")
-    volitile_days_index = [index for index, row in enumerate(BTC_price_history) if abs(row[2]) > volitility_threshold]
+    print("Most volitile days [Defined as change of greater than +/- " + f"{volatility_threshold:>2,.1f}%" + "]")
+    volitile_days_index = [index for index, row in enumerate(BTC_price_history) if abs(row[2]) > volatility_threshold]
 
     for volitile_day in volitile_days_index:
         print(fn.DayPriceString(BTC_price_history[volitile_day]))
